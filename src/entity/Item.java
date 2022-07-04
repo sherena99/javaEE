@@ -1,17 +1,17 @@
-package dto;
+package entity;
 
 import java.math.BigDecimal;
 
-public class ItemDto {
+public class Item {
     private String code;
     private String description;
     private int qtyOnHand;
     private BigDecimal unitPrice;
 
-    public ItemDto() {
+    public Item() {
     }
 
-    public ItemDto(String code, String description, int qtyOnHand, BigDecimal unitPrice) {
+    public Item(String code, String description, int qtyOnHand, BigDecimal unitPrice) {
         this.code = code;
         this.description = description;
         this.qtyOnHand = qtyOnHand;
@@ -52,7 +52,7 @@ public class ItemDto {
 
     @Override
     public String toString() {
-        return "ItemDto{" +
+        return "Item{" +
                 "code='" + code + '\'' +
                 ", description='" + description + '\'' +
                 ", qtyOnHand=" + qtyOnHand +

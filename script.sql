@@ -22,7 +22,6 @@ CREATE TABLE IF NOT EXISTS Item(
     itemCode VARCHAR(15),
     description TEXT,
     qtyOnHand INT DEFAULT 0,
-    discount INT DEFAULT 0,
     unitPrice DOUBLE DEFAULT 0.00,
     CONSTRAINT PRIMARY KEY (itemCode)
     );
